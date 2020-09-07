@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's The Weather?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="headers">
+            <h1 class="center">What's the Weather?</h1>
+            <h2 class="center">Find your local weather for the week!</h2>
+            <div class="center" id="date-today">
+                <h3></h3>
+            </div>
+        </div>
+        <form>
+            <input type="text" autocomplete="off" class="search-box center" id="search-cities"
+                placeholder="Search for your city!">
+            <button type="submit" id="search-btn"></button>
+        </form>
+        <div class="card hidden" id="logged-cities">
+            <ul class="list list-refresh" id="logged-list"></ul>
+        </div>
+    </header>
+    <main>
+        <div class="col-8">
+            <section class="location">
+                <div class="row" id="current-weather">
+                    <div id="date-today">
+                        <h4></h4>
+                    </div>
+                </div>
+            </section>
+            <div class="row" id="forecast">
+                <div class="forecast"></div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-with-data.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.27/moment-timezone-utils.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
